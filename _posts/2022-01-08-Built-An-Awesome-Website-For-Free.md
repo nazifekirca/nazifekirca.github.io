@@ -11,7 +11,7 @@ tags: [Github, website]
 <a href="https://youtu.be/TRIys0HLJuU" title="Video Tutorial"><img src="/assets/images/post_images/website_tutorial/youtube_cover_image.png" alt="Link to video version of tutorial" /></a>
 
 
-### 1 Why a Github page?
+### Why a Github page?
 
 If you want to build a stunning website that is 100% free and 100% yours, you have come to the right place. You neither have to pay for a domain nor for a template nor for hosting. All you need is a free Github account, which you need anyway if you want to break into tech. 
 
@@ -31,8 +31,8 @@ Besides automatic translations, the site will archive your posts automatically b
 
 What are you waiting for?! Build your own website and show the world who you are.
 
-## 2 Steps
-### A Create a free Github account
+## Steps
+### 1. Create a free Github account
 
 ![Sign up](/assets/images/post_images/website_tutorial/sign_up.png)
 
@@ -44,7 +44,7 @@ After being asked whether we want to receive product updates and announcements w
 
 Congratulations, you have a Github account!
 
-### B Fork the template
+### 2. Fork the template
 
 ![skip intro](/assets/images/post_images/website_tutorial/skip_introduction.png)
 
@@ -58,7 +58,7 @@ It contains various folders and files. But no worries: In order to transfer all 
 
 Now a fork is being created. This fork is a copy of the original repository that will appear in our own account.
 
-### C Rename the repo
+### 3. Rename the repo
 
 ![go to settings after forking](/assets/images/post_images/website_tutorial/go_to_settings_adter_forking.png)
 
@@ -88,13 +88,13 @@ Let’s go back to our repository and scroll down to the ReadMe instructions. It
 
 ![readme instrutions](/assets/images/post_images/website_tutorial/readme_instructions.png)
 
-### D Thank Jeffreytse for creating this template
+### 4. Thank Jeffreytse
 
 First, let’s thank the creator of this template, Jeffreytse, by heading to [the original repo](https://github.com/jeffreytse/jekyll-theme-yat). This is the repository from where Datamaunz has forked its repository to prepare it for this tutorial. However, the actual work comes from Jeffreytse. You can show your appreciation by giving a star to the repo.
 
 ![star for jeffreytse](/assets/images/post_images/website_tutorial/star_for_jeffreytse.png)
 
-### E Customize heading and subheading
+### 5. Customize heading and subheading
 
 Now, let’s go back to our own repository and personalize the contents.
 
@@ -128,7 +128,7 @@ Now, scroll down to the bottom of the page and smash the Commit button.
 
 Congratulations, you have committed your first changes! This is huge. Github is a version control system. Changes are documented in the form of such commits. This means, based on your history of commits, you can restore earlier versions of your repository. This comes in handy when you (or someone else) have messed up.
 
-### F Customize menu for automatic translations
+### 6. Customize menu for automatic translations
 
 Let’s make some more changes to our website. Go back to your root repository and scroll down to the Readme file. 
 
@@ -170,7 +170,7 @@ To add a new language, you need to provide:
 
 Don't forget to hit the commit button at the bottom of the page to not lose your changes.
 
-### G Customize the banner image
+### 7. Customize the banner image
 #### Upload new image
 
 Go back to the root repository and head down to the Readme file. The third intervention concerns the banner image. The default image is great and you do not have to change it. In case you wanted to change the image, go to *assets/images/banners/*. The *banners* folder contains two files: 
@@ -220,7 +220,7 @@ banner: "assets/images/banners/balloon-image.jpg"
 
 Scroll down and commit the changes. Done!
 
-### H Further customizations
+### 8. Further customizations
 
 Head back to the root repository. And scroll down to the Readme instructions.
 
@@ -241,7 +241,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 Scroll down, commit the changes and: Done!
 
-### I Customize your About page
+### 9. Customize your About page
 #### Markdown
 
 Back to the root repository scrolling down to the ReadMe instructions. Only the customisation of the About page is left. We can do this by using Markdown syntax.
