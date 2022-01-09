@@ -8,7 +8,7 @@ tags: [Github, website]
 
 ## Welcome to this tutorial!
 
-<a href="https://youtu.be/TRIys0HLJuU" title="Link Title"><img src="/assets/images/post_images/website_tutorial/youtube_cover_image.png" alt="Link to video version of tutorial" /></a>
+<a href="https://youtu.be/TRIys0HLJuU" title="Video Tutorial"><img src="/assets/images/post_images/website_tutorial/youtube_cover_image.png" alt="Link to video version of tutorial" /></a>
 
 
 ### 1 Why a Github page?
