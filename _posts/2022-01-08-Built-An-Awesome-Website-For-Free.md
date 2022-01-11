@@ -8,12 +8,12 @@ tags: [Github, website]
 
 ## Welcome to this tutorial!
 
-<a href="https://youtu.be/TRIys0HLJuU" title="Video Tutorial"><img src="/assets/images/post_images/website_tutorial/youtube_cover_image.png" alt="Link to video version of tutorial" /></a>
+<a href="https://youtu.be/TRIys0HLJuU" title="Video Tutorial"><img src="/assets/images/post_images/website_tutorial/youtube_cover_image.png" alt="Link to video version of tutorial" /><figcaption>Full tutorial also available as video</figcaption></a>
 
 
 ### Why a Github page?
 
-If you want to build a stunning website that is 100% free and 100% yours, you have come to the right place. You neither have to pay for a domain nor for a template nor for hosting. All you need is a free Github account, which you need anyway if you want to break into tech. 
+If you want to build a stunning website that is 100% free and 100% yours, you have come to the right place: Zero cost for domain, template and hosting. All you need is a free Github account, which you'll need anyway if you want to break into tech. 
 
 ### Examples for the type of website
 
@@ -290,7 +290,7 @@ title: About
 
 ### Why
 
-While companies are desperately looking for tech talent, many people are either unemployed or they work in unfullfilling jobs. We want to be the match maker between these two parties. 
+While companies are desperately looking for tech talent, many people are either unemployed or they work in unfulfilling jobs. We want to be the match maker between these two parties. 
 
 ### How
 
