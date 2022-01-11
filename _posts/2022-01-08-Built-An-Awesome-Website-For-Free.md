@@ -13,7 +13,7 @@ tags: [Github, website, tutorial, beginners]
 
 ### Why a Github page?
 
-If you want to build a stunning website that is 100% free and 100% yours, you have come to the right place: Zero cost for domain, template and hosting. All you need is a free Github account, which you'll need anyway if you want to break into tech. 
+If you want to build a stunning website that is 100% free and 100% yours, you have come to the right place: Zero cost for subdomain, template and hosting. All you need is a free Github account, which you'll need anyway if you want to break into tech. 
 
 ### Examples for the type of website
 
