@@ -17,7 +17,7 @@ If you want to build a stunning website that is 100% free and 100% yours, you ha
 
 ### Examples for the type of website
 
-![tea-berlin](/assets/images/post_images/website_tutorial/website_gif.gif)
+![tea-berlin website demo](/assets/images/post_images/website_tutorial/website_gif.gif)
 
 Here are two examples for the kind of website you will be building: 
 - [tea-berlin](https://tea-berlin.github.io/) and 
