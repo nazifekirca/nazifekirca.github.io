@@ -3,7 +3,7 @@ layout: post
 title: Build an awesome website for free
 subtitle: Tutorial (beginner friendly)
 categories: Website
-tags: [Github, website]
+tags: [Github, website, tutorial, beginners]
 ---
 
 ## Welcome to this tutorial!
