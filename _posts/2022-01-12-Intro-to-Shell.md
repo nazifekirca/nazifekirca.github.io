@@ -14,18 +14,25 @@ Both the *Shell* and a *graphical file explorer* allow you to interact with your
 
 #### What is my current working directory?
 > pwd
+
 #### What files do I have in my directory?
 > ls
+
 #### Indicate a relative path
 > /
+
 #### Change the directory
 > cd
+
 ##### current directory
 >> .
+
 ##### parent directory
 >> ..
+
 ##### home directory
 >> ~
+
 
 
 
