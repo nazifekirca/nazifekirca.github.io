@@ -16,37 +16,37 @@ Both the *Shell* and a *graphical file explorer* allow you to interact with your
 
 #### What is my current working directory?
 
-```
+```bash
 pwd
 ```
 
 #### What files do I have in my directory?
 
-```
+```bash
 ls
 ```
 
 #### Indicate a relative path
 
-```
+```bash
 /
 ```
 
 #### Change the directory
-```
+```bash
 cd
 ```
 ##### current directory
-```
+```bash
 .
 ```
 
 ##### parent directory
-```
+```bash
 ..
 ```
 ##### home directory
-```
+```bash
 ~
 ```
 </details>
