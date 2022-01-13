@@ -10,6 +10,7 @@ tags: [Shell, intro]
 
 Both the *Shell* and a *graphical file explorer* allow you to interact with your OS through commands. If mastered, the Shell is more efficient because it does not require you to navigate on a graphical interface.
 
+![balloon image](/assets/images/banners/balloon-image.jpg)
 
 <details>
 <summary>Usefull commands</summary>
