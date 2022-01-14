@@ -13,3 +13,17 @@ It displays, how it is generally rendered in Markdown
 
 ![balloons](/assets/images/banners/balloon-image.jpg)
 
+```python
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame({"1":[0,1,2]})
+```
+
+
+
+```YAML
+layout: post
+```
+
+
