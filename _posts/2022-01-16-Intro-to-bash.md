@@ -8,7 +8,7 @@ tags: [Bash, Intro]
 
 <style>
     table {
-        width:100%
+        width:100%;
     }
 </style>
 
