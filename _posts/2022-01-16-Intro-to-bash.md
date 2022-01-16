@@ -6,6 +6,13 @@ categories: Bash
 tags: [Bash, Intro]
 ---
 
+<style>
+    table {
+        width:100%
+    }
+</style>
+
+
 ## Intro
 
 > Bash stands for *B*ourne *A*gain *Sh*ell
@@ -33,7 +40,6 @@ Regular expression are a vital skill for Bash scripting. See [this site](https:/
 
 | sign | explanation | example |
 | ---- | ----------- | ------- |
-|              |                           |         |
 | [] | create a set | [afct] |
 | ^ | inverse a set | ^[afct] |
 
@@ -42,7 +48,6 @@ Regular expression are a vital skill for Bash scripting. See [this site](https:/
 
 | sign | explanation | example |
 | ---- | ----------- | ------- |
-|              |                           |         |
 | \| | used for piping | sort \| uniq -c |
 
 
@@ -52,7 +57,6 @@ A bash script usually begins with
 
 | convention | explanation | example |
 | ---- | ----------- | ------- |
-|              |                           |         |
 | #!/usr/bash | the ***shebang*** tells the interpreter that this is a bash script |  |
 | which bash | check where bash is |  |
 | Middle of script contains the code |  |  |
