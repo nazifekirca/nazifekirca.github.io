@@ -2,7 +2,6 @@
 layout: post
 title: Github for blogging
 subtitle: Just a test (draft)
-categories: Githu
 categories: Blogging
 tags: [Github, blogging]
 ---
