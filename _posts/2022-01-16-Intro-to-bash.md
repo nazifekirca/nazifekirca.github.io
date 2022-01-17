@@ -29,7 +29,7 @@ Unix is the backbone of the internet. All mayor cloud providers have commandline
 
 #### REGEX
 
-Regular expression are a vital skill for Bash scripting. See [this site](https://regex101.com/) to test your expressions.
+Regular expression are a vital skill for Bash scripting. Great [site to test your expressions](https://regex101.com/).
 
 
 - `[]` create a set, for example: `[afct]`
@@ -69,11 +69,11 @@ Each line in your Bash script can be a shell command. Thus, you can also include
 
 ### Three streams for programs
 
-> STDIN (standard input) - stream of data into the program
+- `STDIN` (standard input) - stream of data into the program
 
-> STDOUT (standard output) - stream of data out of the program
+- `STDOUT` (standard output) - stream of data out of the program
 
-> STDERR (standard error) - errors in the program
+- `STDERR` (standard error) - errors in the program
 
 The streams come from and write out to the terminal.
 
