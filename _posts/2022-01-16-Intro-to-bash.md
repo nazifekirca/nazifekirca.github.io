@@ -103,7 +103,7 @@ Pass arguments by adding a space after the script execution call
 
 #### Example
 
-```bash args.sh
+```bash
 #!/usr/bash
 echo $1
 echo $2
