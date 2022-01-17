@@ -87,10 +87,7 @@ Each line in your Bash script can be a shell command. Thus, you can also include
 
 The streams come from and write out to the terminal.
 
-`
-2> /dev/null
-`
-in script calls redirects STDERR to be deleted (`1> /dev/null` would be STDOUT)
+`2> /dev/null` in script calls redirects STDERR to be deleted (`1> /dev/null` would be STDOUT)
 
 ![STDOUT_STDIN](/assets/images/post_images/intro_to_bash_scripting/STDOUT_STDIN.png)
 
@@ -98,11 +95,32 @@ in script calls redirects STDERR to be deleted (`1> /dev/null` would be STDOUT)
 
 Pass arguments by adding a space after the script execution call
 
-- `ARGV` is the array of all the arguments given to the program
+-`ARGV` is the array of all the arguments given to the program
 - Each argument can be accessed via the `$` notation
     - the first argument as `$1`, the second as `$2` etc.
 - $@ and $* give all the arguments in ARGV
 - $# give the length (number) of arguments
+
+#### Example
+
+```bash args.sh
+#!/usr/bash
+echo $1
+echo $2
+echo $@
+echo "There are " $# "arguments"
+```
+
+> bash args.sh one two three four five
+
+```Output
+one
+two
+one two three four five
+There are 5 arguments
+```
+
+
 
 
 
