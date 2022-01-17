@@ -10,9 +10,7 @@ tags: [Bash, Intro]
 
 > Bash stands for *B*ourne *A*gain *Sh*ell
 
-Bash was developed in the 80's. It is often the default in Unix systems and Macs.
-
-Unix is the backbone of the internet. All mayor cloud providers have commandline interfaces to their products.
+Bash was developed in the 80's. It is often the default in Unix systems and Macs. Unix is the backbone of the internet, which is why all mayor cloud providers have commandline interfaces to their products. 
 
 ### Prerequisites: 
 
