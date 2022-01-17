@@ -6,8 +6,6 @@ categories: Bash
 tags: [Bash, Intro]
 ---
 
-[command]()
-
 ## Intro
 
 > Bash stands for *B*ourne *A*gain *Sh*ell
