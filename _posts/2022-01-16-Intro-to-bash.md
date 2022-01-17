@@ -6,12 +6,7 @@ categories: Bash
 tags: [Bash, Intro]
 ---
 
-<style>
-    table {
-        width:100%;
-    }
-</style>
-
+[command]()
 
 ## Intro
 
@@ -26,9 +21,8 @@ Unix is the backbone of the internet. All mayor cloud providers have commandline
 - Understand what the command line is (terminal, shell)
 - Understand basic commands such as **cat**, **grep**, **sed** etc.
 
-| command | function |
+| <div style="width:300px">command</div> |  <div style="width:500px">function</div>|
 |---------| -------- |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 | (e)grep| filters input based on regex pattern matching|
 | cat | concatenates file contents line-by-line  |
 | tail \ head | give only the last -n lines |
