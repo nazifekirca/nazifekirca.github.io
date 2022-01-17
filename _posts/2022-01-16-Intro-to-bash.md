@@ -10,7 +10,7 @@ tags: [Bash, Intro]
 
 > Bash stands for *B*ourne *A*gain *Sh*ell
 
-Bash was developed in the 80's. It is often the default in Unix systems and Macs. Unix is the backbone of the internet, which is why all mayor cloud providers have commandline interfaces to their products. 
+Bash was developed in the 80's. It is often the default in Unix systems and Macs. Unix is the backbone of the internet, which is why all mayor cloud providers have commandline interfaces to their products.
 
 ### Prerequisites: 
 
@@ -69,9 +69,7 @@ Each line in your Bash script can be a shell command. Thus, you can also include
 ### Three streams for programs
 
 - `STDIN` (standard input) - stream of data into the program
-
 - `STDOUT` (standard output) - stream of data out of the program
-
 - `STDERR` (standard error) - errors in the program
 
 The streams come from and write out to the terminal.
