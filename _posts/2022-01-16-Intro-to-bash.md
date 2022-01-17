@@ -19,13 +19,15 @@ Unix is the backbone of the internet. All mayor cloud providers have commandline
 - Understand what the command line is (terminal, shell)
 - Understand basic commands such as **cat**, **grep**, **sed** etc.
 
+#### Basic commands
+
 - `(e)grep` filters input based on regex pattern matching
 - `cat` concatenates file contents line-by-line
 - `tail` \ `head` give only the last -n lines
 - `wc` does a word or line count (flags: -w -l)
 - `sed` pattern-matched string replacement
 
-### REGEX
+#### REGEX
 
 Regular expression are a vital skill for Bash scripting. See [this site](https://regex101.com/) to test your expressions.
 
@@ -33,7 +35,7 @@ Regular expression are a vital skill for Bash scripting. See [this site](https:/
 - `[]` create a set, for example: `[afct]`
 - `^` inverse a set, for example: `^[afct]`
 
-### Piping
+#### Piping
 
 - `|` used for piping, for example: `sort | uniq -c`
 
