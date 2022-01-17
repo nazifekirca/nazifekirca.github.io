@@ -15,7 +15,8 @@ Bash was developed in the 80's. It is often the default in Unix systems and Macs
 ### Prerequisites: 
 
 - Understand what the command line is (terminal, shell)
-- Understand basic commands such as **cat**, **grep**, **sed** etc.
+- Understand basic commands such as `cat`, `grep`, `sed` etc.
+- check out the [bash shell cheat sheet](https://www.educative.io/blog/bash-shell-command-cheat-sheet) and this [explanation of sed](https://www.grymoire.com/Unix/Sed.html#uh-0)
 
 #### Basic commands
 
@@ -108,8 +109,6 @@ one two three four five
 There are 5 arguments
 ```
 
-[bash shell cheat sheet](https://www.educative.io/blog/bash-shell-command-cheat-sheet)
 
-[explanation of sed](https://www.grymoire.com/Unix/Sed.html#uh-0)
 
 
