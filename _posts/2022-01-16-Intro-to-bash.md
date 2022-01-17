@@ -95,11 +95,11 @@ The streams come from and write out to the terminal.
 
 Pass arguments by adding a space after the script execution call
 
--`ARGV` is the array of all the arguments given to the program
-- Each argument can be accessed via the `$` notation
+- `ARGV` is the array of all the arguments given to the program
+-  Each argument can be accessed via the `$` notation
     - the first argument as `$1`, the second as `$2` etc.
-- $@ and $* give all the arguments in ARGV
-- $# give the length (number) of arguments
+- `$@` and `$*` give all the arguments in ARGV
+- `$#` give the length (number) of arguments
 
 #### Example
 
@@ -119,16 +119,6 @@ two
 one two three four five
 There are 5 arguments
 ```
-
-
-
-
-
-
-
-
-
-
 
 [bash shell cheat sheet](https://www.educative.io/blog/bash-shell-command-cheat-sheet)
 
