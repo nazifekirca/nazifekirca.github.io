@@ -23,44 +23,38 @@ Unix is the backbone of the internet. All mayor cloud providers have commandline
 
 | <div style="width:300px">command</div> |  <div style="width:500px">function</div>|
 |---------| -------- |
-| (e)grep| filters input based on regex pattern matching|
-| cat | concatenates file contents line-by-line  |
-| tail \ head | give only the last -n lines |
-| wc | does a word or line count (falgs: -w -l) |
-| sed | pattern-matched string replacement  |
+
+
+- `(e)grep` filters input based on regex pattern matching
+- `cat` concatenates file contents line-by-line
+- `tail` \ `head` give only the last -n lines
+- `wc` does a word or line count (flags: -w -l)
+- `sed` pattern-matched string replacement
 
 ### REGEX
 
 Regular expression are a vital skill for Bash scripting. See [this site](https://regex101.com/) to test your expressions.
 
-| sign | explanation | example |
-| ---- | ----------- | ------- |
-| [] | create a set | [afct] |
-| ^ | inverse a set | ^[afct] |
+
+- `[]` create a set, for example: `[afct]`
+- `^` inverse a set, for example: `^[afct]`
 
 ### Piping
 
-
-| sign | explanation | example |
-| ---- | ----------- | ------- |
-| \| | used for piping | sort \| uniq -c |
+- `|` used for piping, for example: `sort | uniq -c`
 
 
 ## Bash Scripts
 
 A bash script usually begins with
 
-| convention | explanation | example |
-| ---- | ----------- | ------- |
-| #!/usr/bash | the ***shebang*** tells the interpreter that this is a bash script |  |
-| which bash | check where bash is |  |
-| Middle of script contains the code |  |  |
-| .sh as file extension  | Save and run  |  |
-| bash script_name.sh  | run the script  |  |
-| ./script_name.sh  | run the script if shebang is the first line  |  |
 
-[convention]: test
-
+- `#!/usr/bash` is called ***shebang*** and tells the interpreter that this is a bash script
+- `which bash` can be used to *check where bash is*
+- *Middle* of script contains the code
+- `.sh` is conventionally used as file extension
+- `bash script_name.sh`, run the script
+- `./script_name.sh`, run the script if shebang is the first line 
 
 
 ### Example
