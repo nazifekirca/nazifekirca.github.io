@@ -65,15 +65,13 @@ apple
 apple
 carrot
 ```
-> cat fruits.txt | sort | uniq -c | head -n 3
+> cat fruits.txt \| sort \| uniq -c \| head -n 3
 
 ```Output
 1 apple
 1 banana
 1 carrot
 ```
-
-
 
 ## Bash Scripts
 
@@ -130,11 +128,6 @@ swimming
 > cat sports.txt 1> new_sports.txt
 <br>cat new_sports.txt
 
-
-
-
-
-
 ### Arguments (ARGV)
 
 Pass arguments by adding a space after the script execution call
@@ -164,6 +157,6 @@ one two three four five
 There are 5 arguments
 ```
 
-
+## Basic variables in Bash
 
 
