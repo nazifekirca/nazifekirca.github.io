@@ -48,21 +48,25 @@ apple
 carrot
 ```
 > grep 'a' fruits.txt
+
 ```Output
 banana
 apple
 carrot
 ```Output
 > grep 'p' fruits.txt
+
 ```Output
 apple
 ```
 > grep '[pc]' fruits.txt
+
 ```Output
 apple
 carrot
 ```
 > cat fruits.txt | sort | uniq -c | head -n 3
+
 ```Output
 1 apple
 1 banana
