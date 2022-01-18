@@ -160,14 +160,12 @@ There are 5 arguments
 
 ## Basic variables in Bash
 
-variables1.sh
+### Quotes and backticks
 ```
 firstname='Cynthia'
 lastname='Liu'
 echo "Hi there" $firstname $lastname
 ```
-> bash variables1.sh
-
 ```Output
 Hi there Cynthia Liu
 ```
