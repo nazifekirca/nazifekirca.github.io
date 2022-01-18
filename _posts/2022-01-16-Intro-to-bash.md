@@ -75,8 +75,9 @@ carrot
 
 ## Bash Scripts
 
-A bash script usually begins with
+### General structure
 
+A bash script usually begins with
 
 - `#!/usr/bash` is called ***shebang*** and tells the interpreter that this is a bash script
 - `which bash` can be used to *check where bash is*
@@ -86,7 +87,7 @@ A bash script usually begins with
 - `./script_name.sh`, run the script if shebang is the first line 
 
 
-### Example
+#### Example
 
 ```bash
 #!/usr/bash
