@@ -53,7 +53,7 @@ carrot
 banana
 apple
 carrot
-```Output
+```
 > grep 'p' fruits.txt
 
 ```Output
