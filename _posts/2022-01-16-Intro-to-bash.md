@@ -5,10 +5,11 @@ subtitle: (draft)
 categories: Bash
 tags: [Bash, Intro]
 ---
+*The content is based on DataCamp's [Intro to Bash Scripting](https://www.datacamp.com/courses/introduction-to-bash-scripting) course.*
 
 ## Intro
 
-> Bash stands for *B*ourne *A*gain *Sh*ell
+> Bash stands for **B**ourne **A**gain **Sh**ell
 
 Bash was developed in the 80's. It is often the default in Unix systems and Macs. Unix is the backbone of the internet, which is why all mayor cloud providers have commandline interfaces to their products.
 
@@ -38,6 +39,37 @@ Regular expression are a vital skill for Bash scripting. Great [site to test you
 
 - `|` used for piping, for example: `sort | uniq -c`
 
+##### Examples
+
+fruits.txt
+```bash
+banana
+apple
+carrot
+```
+> grep 'a' fruits.txt
+```Output
+banana
+apple
+carrot
+```Output
+> grep 'p' fruits.txt
+```Output
+apple
+```
+> grep '[pc]' fruits.txt
+```Output
+apple
+carrot
+```
+> cat fruits.txt | sort | uniq -c | head -n 3
+```Output
+1 apple
+1 banana
+1 carrot
+```
+
+
 
 ## Bash Scripts
 
@@ -59,6 +91,11 @@ A bash script usually begins with
 echo "hello world"
 echo "Goodbye world
 ```
+> ./eg.sh
+
+or
+> bash eg.sh
+
 ```output
 Hello world
 Goodbye world
@@ -77,6 +114,22 @@ The streams come from and write out to the terminal.
 `2> /dev/null` in script calls redirects STDERR to be deleted (`1> /dev/null` would be STDOUT)
 
 ![STDOUT_STDIN](/assets/images/post_images/intro_to_bash_scripting/STDOUT_STDIN.png)
+
+#### Example
+
+sports.txt
+```bash
+football
+basketball
+swimming
+```
+> cat sports.txt 1> new_sports.txt
+<br>cat new_sports.txt
+
+
+
+
+
 
 ### Arguments (ARGV)
 
