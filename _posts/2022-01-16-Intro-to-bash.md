@@ -159,4 +159,67 @@ There are 5 arguments
 
 ## Basic variables in Bash
 
+variables1.sh
+```
+firstname='Cynthia'
+lastname='Liu'
+echo "Hi there" $firstname $lastname
+```
+> bash variables1.sh
+
+```Output
+Hi there Cynthia Liu
+```
+
+- the `$` is crucial for bash to treat something as a variable and not a string
+- Do not add spaces around the `=` sign
+- Single quotes (`'sometext'`) = Shell interprets what is netween the quotes literally
+- Double quotes (`"sometext"`) = Shell interprets literally **except** using `$`and backticks
+- Backticks (**\`sometext\`**) = creates a *shell-within-a-shell*; Shell runs the command and captures STDOUT back into a variable
+
+### Examples
+
+*Single quotes*
+```Bash
+now_var='NOW'
+now_var_singlequote='$now_var'
+echo $now_var_singlequote
+```
+```Output
+$now_var
+```
+*Double quotes*
+```Bash
+now_var='NOW'
+now_var_doublequote="$now_var"
+echo $now_var_doublequote
+```
+```
+NOW
+```
+*Backticks*
+
+Typing the following command into the terminal returns the current date
+> date
+
+```Output
+Tue Jan 18 10:51:50 CET 2022
+```
+By using backticks, you can use `date` to invoke a *shell-within-a-shell*
+
+```
+rightnow_doublequote="The date is `date`."
+echo $rightnow_doublequote
+```
+```Output
+The date is Tue Jan 18 10:51:50 CET 2022
+```
+A *shell-within-a-shell* can also be achieved by using `$(date)`
+```
+rightnow_doublequote="The date is $(date)."
+echo $rightnow_doublequote
+```
+```Output
+The date is Tue Jan 18 10:51:50 CET 2022
+```
 
