@@ -278,6 +278,7 @@ echo "My dog's name is $dog_name and he is $dog_age years old"
 ```
 
 > echo $((5 + 7))
+
 ```
 12
 ```
@@ -306,6 +307,7 @@ echo "The average score is $(echo "($model1 + $model2) / 2" | bc)"
 
 ##### Return full array
 > echo ${my_array[@]}
+
 ```
 1 3 5 2
 ```
@@ -323,6 +325,7 @@ echo "The average score is $(echo "($model1 + $model2) / 2" | bc)"
 > my_array[1]=999
 
 > echo ${my_array[@]}
+
 ```
 999 3 5 2
 ```
