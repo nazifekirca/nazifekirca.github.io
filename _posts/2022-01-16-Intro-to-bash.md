@@ -397,19 +397,3 @@ city_name population
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 
