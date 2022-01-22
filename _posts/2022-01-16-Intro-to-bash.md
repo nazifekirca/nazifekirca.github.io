@@ -222,3 +222,71 @@ echo $rightnow_doublequote
 The date is Tue Jan 18 10:51:50 CET 2022
 ```
 
+## Numeric variables in Bash
+
+Numbers are not natively supported in Bash.
+
+### expr
+
+- `expr` is a useful utility program (like `cat` or `grep`)
+
+> expr 1 + 4
+
+```Output
+5
+```
+
+- `expr` cannot handle decimal places
+
+### bc
+
+- `bc` (basic calculator) opens calculator which can handle decimal places
+- `bc` can be used in piping by sending a string
+
+> echo "5 + 7.5" | bc
+
+```
+12.5
+```
+
+- `bc` has a `scale` argument for defining the number of decimal places
+
+> echo "10 / 3" | bc
+
+```
+3
+```
+
+> echo "scale=3; 10 / 3" | bc
+
+```
+3.333
+```
+
+```Bash
+dog_name='Roger'
+dog_age=6
+echo "My dog's name is $dog_name and he is $dog_age years old"
+```
+
+### Double bracket notation (not for decimals)
+
+> expr 5 + 7
+
+```
+12
+```
+
+> echo $((5 + 7))
+```
+12
+```
+
+```Bash
+model1=87.65
+model2=89.20
+echo "The total score is $(echo "$model1 + $model2" | bc)"
+echo "The average score is $(echo "($model1 + $model2) / 2" | bc)"
+```
+
+
