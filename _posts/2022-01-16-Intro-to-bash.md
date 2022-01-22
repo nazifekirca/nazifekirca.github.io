@@ -178,7 +178,7 @@ Hi there Cynthia Liu
 
 ### Examples
 
-*Single quotes*
+#### Single quotes
 ```Bash
 now_var='NOW'
 now_var_singlequote='$now_var'
@@ -187,7 +187,7 @@ echo $now_var_singlequote
 ```Output
 $now_var
 ```
-*Double quotes*
+#### Double quotes
 ```Bash
 now_var='NOW'
 now_var_doublequote="$now_var"
@@ -196,7 +196,7 @@ echo $now_var_doublequote
 ```
 NOW
 ```
-*Backticks*
+#### Backticks
 
 Typing the following command into the terminal returns the current date
 > date
@@ -289,4 +289,124 @@ echo "The total score is $(echo "$model1 + $model2" | bc)"
 echo "The average score is $(echo "($model1 + $model2) / 2" | bc)"
 ```
 
+## Arrays in Bash
 
+### 1) *Normal* numerical-indexed structure
+
+- equivalent to a list in Python
+
+#### Option 1 (declare)
+
+> declare -a my_first_array
+
+#### Option 2 (brackets and spaces)
+
+> my_array=(1 3 5 2)
+
+
+##### Return full array
+> echo ${my_array[@]}
+```
+1 3 5 2
+```
+
+##### Return length of an array
+> echo ${#my_array[@]}
+
+##### Accessing array elements
+> echo ${my_array[2]}
+
+```
+5
+```
+##### Manipulating array elements
+> my_array[1]=999
+
+> echo ${my_array[@]}
+```
+999 3 5 2
+```
+##### Slicing arrays
+
+- Use `array[@]:N:M` to slice out a subset of the array
+    - `N` is the starting index
+    - `M` is the number of elements to be returned
+
+```Bash
+my_array=(15 20 300 42 23 2 4 33 54 67 66)
+echo ${my_array[@]:3:2}
+```
+
+```Output
+42 23
+```
+
+##### Appending to arrays
+
+- Use array+=(elements)
+
+```Bash
+my_array=(300 42 23 2 4 33 54 67 66)
+my_array+=(10)
+echo ${my_array[@]}
+```
+```Output
+300 42 23 2 4 33 54 67 66 10
+```
+
+### 2) *Associative* arrays
+
+- similar to normal array, but with key-value pairs instead of numerical indexes (similar to a dictionary in Python)
+- only available in Bash 4 onwards
+
+
+#### Multiple line approach
+```Bash
+declare -A city_details # Declare first
+city_details=([city_name]="New York" [population]=14000000) # Add elements
+echo ${city_details[city_name]} # Index using key to return a value
+```
+```Output
+New York
+```
+
+#### One line approach
+
+```Bash
+declare -A city_details=([city_name]="New York" [population]=14000000)
+echo ${city_details[city_name]}
+```
+
+```Output
+New York
+```
+
+#### Access the keys
+
+- `!` to access the *keys*
+
+```Bash
+echo ${!city_details[@]}
+```
+```
+city_name population
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 
