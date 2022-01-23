@@ -890,3 +890,31 @@ The default, `*` means *every*
 - Minutes star is 15 (15 minutes past the hour). Hours star is 14 (after 2pm). Next two are `*` (every day of month, every month of year). Last star is day 7 (on Sundays).
     - Overall: **run every day at 2:15pm every Sunday**
 
+### Advanced cronjob structure
+
+Run something multiple times per day or every *X* time increments.
+
+- use a comma for specific time intervals
+    - `15,30,45 * * * *` will run at 15, 30 and 45 minutes mark for whatever hours are specified by the second star
+- use a slash for *every X increment*
+    - `*/15 * * * *` runs every 15 minutes
+
+### Create your first cronjob
+
+Let's schedule a script called `extract_data.sh` to run every morning at 1:30am:
+
+1. In terminal type `crontab -e` to edit your list of conrjobs
+    - It may ask what editor to use. `nano` is an easy option and a less-steep learning curve than vi (vim)
+2. Create the cronjob:
+    - 30 1 * * * extract_data.sh
+3. Exit the editor to save it
+    - `nano` (on Mac) you would use `ctrl` + `o` then `enter` then `ctrl` + `x` to exit
+    - You will see a message `crontab: installing new crontab`
+4. Check it is there by running `crontab -l`
+
+```Output
+30 1 * * * extract_data.sh
+```
+
+
+
