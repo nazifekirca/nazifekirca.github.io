@@ -663,3 +663,51 @@ done
 ```
 This will print out 1 forever!
 
+## CASE statements
+
+### Why CASE statements?
+
+More optimal once IF statements get complex
+
+### A complex IF statement
+
+```Bash
+if grep -q 'sydney' $1; then
+    mv $1 sydney/
+fi
+if grep -q 'melbourne|brisbane' $1; then
+    rm $1
+fi
+if grep -q 'canberra' $1; then
+    mv $1 "IMPORTANT_$1"
+fi
+```
+
+
+### CASE statement structure
+
+```Bash
+case 'STRINGVAR' in
+    PATTERN1)
+    COMMAND1;;
+    PATTERN2)
+    COMMAND2;;
+    *)
+    DEFAULT COMMAND;;
+esac
+```
+
+### From IF to CASE
+
+```Bash
+case $(cat $1) in
+    *sydney*)
+    mv $1 sydney/ ;;
+    *melbourne*|*brisbane*)
+    rm $1 ;;
+    *canberra*)
+    mv $1 "IMPORTANT_$1" ;;
+    *)
+    echo "No cities found" ;;
+esac
+```
