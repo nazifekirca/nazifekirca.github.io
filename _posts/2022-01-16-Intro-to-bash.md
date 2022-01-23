@@ -712,3 +712,48 @@ case $(cat $1) in
     echo "No cities found" ;;
 esac
 ```
+
+## Basic Functions
+
+### Syntax
+#### Option 1
+```Bash
+function_name () {
+    #function_code
+    return #something
+}
+```
+
+#### Option 2
+```Bash
+function function_name {
+    #function_code
+    return #something
+}
+```
+### Calling a function
+```Bash
+function print_hello () {
+    echo "Hello world!"
+}
+print_hello
+```
+```Output
+Hello world!
+```
+### Example
+```Bash
+temp_f=$1
+function convert_temp () {
+    temp_c=$(echo "scale=2; ($temp_f - 32) * 5 / 9" | bc)
+    echo $temp_c
+}
+convert_temp
+```
+```Bash
+bash fahrenheit_to_celsius.sh 30
+```
+```Output
+-1.11
+```
+
