@@ -743,17 +743,150 @@ Hello world!
 ```
 ### Example
 ```Bash
-temp_f=$1
+temp_f=30
 function convert_temp () {
     temp_c=$(echo "scale=2; ($temp_f - 32) * 5 / 9" | bc)
     echo $temp_c
 }
 convert_temp
 ```
-```Bash
-bash fahrenheit_to_celsius.sh 30
-```
 ```Output
 -1.11
 ```
+
+### Arguments, return values, and scope
+
+- `$1` notation to access arguments
+- `$@` and `$*` to give all the arguments in `ARGV`
+- `$#` gives the length (number) of arguments
+
+```Bash
+function print_filename {
+    echo "The first file was $1"
+    for file in $@
+    do
+        echo "This file has name $file"
+    done
+}
+print_filename "LOTR.txt" "mod.txt" "A.py"
+```
+```Output
+The first file was LOTR.txt
+This file has name LOTR.txt
+This file has name mod.txt
+This file has name A.py
+```
+
+### Scope
+#### Global by default
+
+> *Scope* in programming refers to how accessible a variable is.
+
+- **Global**: something is accessible anaywhere in the program, including inside FOR loops, IF statements, functions etc.
+- **Local**: something is only accessible in a certain part of the program
+
+<p style="color:red">In Bash, all variables are global by default.</p>
+
+```Bash
+function print_filename {
+    first_filename=$1
+}
+print_filename "LOTR.txt" "model.txt"
+echo $first_filename
+```
+
+```Output
+LOTR.txt
+```
+
+#### Restricting scope
+
+- `local` to restrict variable scope
+
+```Bash
+function print_filename {
+    local first_filename=$1
+}
+print_filename "LOTR.txt" "model.txt"
+echo $first_filename
+```
+```Output
+
+```
+
+#### Return values
+
+The `return` option in Bash is only meant to determine if the funciton was a success (0) or failure (other values 1-255). It is captured in the global variable `$?`
+
+```Bash
+function function_2 {
+    echlo
+}
+function_2
+echo $?
+```
+
+```Output
+function_2: command not found: echlo
+127
+```
+
+#### Returning correctly
+
+```Bash
+function convert_temp {
+    echo $(echo "sclae=2; ($1 - 32) * 5 / 9" | bc)
+}
+converted=$(convert_temp 30)
+echo "30F in Celsius is $converted C"
+```
+
+```Output
+30F in Celsius is -1 C
+```
+
+## Cron to schedule scripts
+
+Cron (from *chronos*) has been part of unix-like systems since the 70's. 
+
+A **crontab** is a file that contains **cronjobs**, which each tell **cron** what code to run and when.
+
+### Crontab - the driver of cronjobs
+
+```Bash
+crontab -l
+```
+```Output
+crontab: no crontab for user
+```
+### Crontab and cronjob structure
+
+There are 5 stars to set, one for each time unit.
+
+```
+# ┌───────────── minute (0 - 59)
+# │ ┌───────────── hour (0 - 23)
+# │ │ ┌───────────── day of the month (1 - 31)
+# │ │ │ ┌───────────── month (1 - 12)
+# │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday;
+# │ │ │ │ │                  7 is also Sunday on some systems)
+# │ │ │ │ │
+# │ │ │ │ │
+# * * * * * <command to execute>
+```
+The default, `*` means *every*
+
+### Example
+
+```Bash
+5 1 * * * bash myscript.sh
+```
+- Minutes star is 5 (5 minutes past the hour). Hours star is 1 (after 1am). The last three are `*`, so every day and month
+    - Overall: **run every day at 1:05am**
+
+```Bash
+15 14 * * 7 bash myscript.sh
+```
+- Minutes star is 15 (15 minutes past the hour). Hours star is 14 (after 2pm). Next two are `*` (every day of month, every month of year). Last star is day 7 (on Sundays).
+    - Overall: **run every day at 2:15pm every Sunday**
 
