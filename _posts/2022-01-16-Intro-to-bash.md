@@ -94,7 +94,6 @@ A bash script usually begins with
 - `bash script_name.sh`, run the script
 - `./script_name.sh`, run the script if shebang is the first line 
 
-
 #### Example
 
 ```bash
@@ -615,7 +614,7 @@ done
 books/book1.txt
 books/book2.txt 
 ```
-### Shell-within-a-shell `$()`
+### Shell-within-a-shell
 Let's assume the following folder structure:
 ```
 books/
@@ -625,7 +624,7 @@ books/
 |+--LOTR.txt
 |+--file.csv
 ```
-Use for loop to loop through the results of a call to shell.within-a-shell:
+Loop through the results of a call to shell-within-a-shell using `$()`:
 ```Bash
 for book in $(ls books/ | grep -i 'air')
 do
