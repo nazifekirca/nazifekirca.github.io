@@ -538,4 +538,84 @@ if $(grep -q Hello words.txt); then
     echo "Hello is inside!"
 fi
 ```
+- `-q` stand for *quiet* so it doesn't return the matched lines like grep normally does. It just returns true if any lines match.
+- when using command-line arguments like grep in IF statements, there is no need for square brackets
+
+## FOR loops
+### Basic structure
+```Bash
+for x in 1 2 3
+do
+    echo $x
+done
+```
+```Output
+1
+2
+3
+```
+### Number ranges
+#### 1) Brace expansion
+- {START..STOP..INCREMENT}
+
+```Bash
+for x in {1..5..2}
+do
+    echo $x
+done
+```
+```Output
+1
+3
+5
+```
+#### 2) Three expression
+- double parenthesis
+```Bash
+for ((x=2;x<=4;x+=2))
+do
+    echo $x
+done
+```
+```Output
+2
+4
+```
+### Glob expansions
+- `*` for pattern-matching expansions in for loops
+
+```Bash
+for book in books/*
+do
+    echo $book
+done
+```
+```Output
+books/book1.txt
+books/book2.txt 
+```
+### Shell-within-a-shell `$()`
+Let's assume the following folder structure:
+```
+books/
+|+--AirportBook.txt
+|+--CattleBook.txt
+|+--FairMarketBook.txt
+|+--LOTR.txt
+|+--file.csv
+```
+Use for loop to loop through the results of a call to shell.within-a-shell:
+```Bash
+for book in $(ls books/ | grep -i 'air')
+do
+    echo $book
+done
+```
+```
+AirportBook.txt
+FairMarketBook.txt 
+```
+
+## WHILE statements
+
 
