@@ -47,25 +47,33 @@ banana
 apple
 carrot
 ```
-> grep 'a' fruits.txt
+```Bash
+grep 'a' fruits.txt
+```
 
 ```Output
 banana
 apple
 carrot
 ```
-> grep 'p' fruits.txt
+```Bash
+grep 'p' fruits.txt
+```
 
 ```Output
 apple
 ```
-> grep '[pc]' fruits.txt
+```Bash
+grep '[pc]' fruits.txt
+```
 
 ```Output
 apple
 carrot
 ```
-> cat fruits.txt \| sort \| uniq -c \| head -n 3
+```Bash
+cat fruits.txt \| sort \| uniq -c \| head -n 3
+```
 
 ```Output
 1 apple
@@ -94,12 +102,16 @@ A bash script usually begins with
 echo "hello world"
 echo "Goodbye world
 ```
-> ./eg.sh
+```Bash
+./eg.sh
+```
 
 or
-> bash eg.sh
+```Bash
+bash eg.sh
+```
 
-```output
+```Output
 Hello world
 Goodbye world
 ```
@@ -121,13 +133,21 @@ The streams come from and write out to the terminal.
 #### Example
 
 sports.txt
-```bash
+```txt
 football
 basketball
 swimming
 ```
-> cat sports.txt 1> new_sports.txt
-<br>cat new_sports.txt
+
+```Bash
+cat sports.txt 1> new_sports.txt
+cat new_sports.txt
+```
+```Output
+football
+basketball
+swimming
+```
 
 ### Arguments (ARGV)
 
