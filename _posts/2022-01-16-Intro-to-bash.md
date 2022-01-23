@@ -601,6 +601,7 @@ done
 2
 4
 ```
+
 ### Glob expansions
 - `*` for pattern-matching expansions in for loops
 
