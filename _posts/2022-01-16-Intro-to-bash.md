@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intro to Bash Scripting
-subtitle: (draft)
+subtitle: Notes from Datacamp Course
 categories: Bash
 tags: [Bash, Intro]
 ---
