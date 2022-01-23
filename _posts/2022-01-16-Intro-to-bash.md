@@ -47,34 +47,35 @@ banana
 apple
 carrot
 ```
+
+##### 1
 ```Bash
 grep 'a' fruits.txt
 ```
-
 ```Output
 banana
 apple
 carrot
 ```
+##### 2
 ```Bash
 grep 'p' fruits.txt
 ```
-
 ```Output
 apple
 ```
+##### 3
 ```Bash
 grep '[pc]' fruits.txt
 ```
-
 ```Output
 apple
 carrot
 ```
+##### 4
 ```Bash
 cat fruits.txt \| sort \| uniq -c \| head -n 3
 ```
-
 ```Output
 1 apple
 1 banana
