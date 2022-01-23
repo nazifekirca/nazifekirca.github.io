@@ -641,5 +641,5 @@ do
     echo $x
 done
 ```
-THis will print out 1 forever!
+This will print out 1 forever!
 
