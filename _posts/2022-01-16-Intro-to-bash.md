@@ -425,7 +425,7 @@ city_name population
 
 ## IF statements
 
-### Structure of basic IF statements
+### Basic structure
 
 ```Bash
 if [ CONDITION ]; then
@@ -438,7 +438,7 @@ fi
 - spaces between square brackets and conditional elements
 - Semi-colon after close brakcet `];`
 
-### IF statement and strings
+### Strings
 
 - `==` for *equal to*
 - `!=` for *not equal to*
@@ -494,7 +494,7 @@ fi
 More bash conditional expressions can be found [here](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html).
 
 
-### AND and OR in Bash
+### AND and OR
 
 - `&&` for AND
 - `||` for OR
@@ -538,3 +538,4 @@ if $(grep -q Hello words.txt); then
     echo "Hello is inside!"
 fi
 ```
+
