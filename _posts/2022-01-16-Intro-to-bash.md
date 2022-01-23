@@ -617,5 +617,29 @@ FairMarketBook.txt
 ```
 
 ## WHILE statements
+### Syntax
+```Bash
+x = 1
+while [ $x -le 3 ];
+do
+    echo $x
+    ((x+=1))
+done
+```
 
+```Output
+1
+2
+3
+```
+<p style="color:red">Make sure not to create an infinite loop!</p>
+
+```Bash
+x = 1
+while [ $x -le 3 ];
+do
+    echo $x
+done
+```
+THis will print out 1 forever!
 
