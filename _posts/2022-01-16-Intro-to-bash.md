@@ -5,7 +5,7 @@ subtitle: (draft)
 categories: Bash
 tags: [Bash, Intro]
 ---
-*The content is based on DataCamp's [Intro to Bash Scripting](https://www.datacamp.com/courses/introduction-to-bash-scripting) course.*
+*The content is based on DataCamp's [Intro to Bash Scripting](https://www.datacamp.com/courses/introduction-to-bash-scripting).*
 
 ## Intro
 
@@ -161,7 +161,7 @@ There are 5 arguments
 ## Basic variables in Bash
 
 ### Quotes and backticks
-```
+```Bash
 firstname='Cynthia'
 lastname='Liu'
 echo "Hi there" $firstname $lastname
@@ -196,17 +196,20 @@ echo $now_var_doublequote
 ```
 NOW
 ```
-#### Backticks
 
 Typing the following command into the terminal returns the current date
-> date
+```Bash
+date
+```
 
 ```Output
 Tue Jan 18 10:51:50 CET 2022
 ```
+#### Backticks
+
 By using backticks, you can use `date` to invoke a *shell-within-a-shell*
 
-```
+```Bash
 rightnow_doublequote="The date is `date`."
 echo $rightnow_doublequote
 ```
@@ -214,7 +217,7 @@ echo $rightnow_doublequote
 The date is Tue Jan 18 10:51:50 CET 2022
 ```
 A *shell-within-a-shell* can also be achieved by using `$(date)`
-```
+```Bash
 rightnow_doublequote="The date is $(date)."
 echo $rightnow_doublequote
 ```
@@ -230,7 +233,9 @@ Numbers are not natively supported in Bash.
 
 - `expr` is a useful utility program (like `cat` or `grep`)
 
-> expr 1 + 4
+```Bash
+expr 1 + 4
+```
 
 ```Output
 5
@@ -243,23 +248,29 @@ Numbers are not natively supported in Bash.
 - `bc` (basic calculator) opens calculator which can handle decimal places
 - `bc` can be used in piping by sending a string
 
-> echo "5 + 7.5" | bc
-
+```Bash
+echo "5 + 7.5" | bc
 ```
+
+```Output
 12.5
 ```
 
 - `bc` has a `scale` argument for defining the number of decimal places
 
-> echo "10 / 3" | bc
-
+```Bash
+echo "10 / 3" | bc
 ```
+
+```Output
 3
 ```
 
-> echo "scale=3; 10 / 3" | bc
-
+```Bash
+echo "scale=3; 10 / 3" | bc
 ```
+
+```Output
 3.333
 ```
 
@@ -271,15 +282,19 @@ echo "My dog's name is $dog_name and he is $dog_age years old"
 
 ### Double bracket notation (not for decimals)
 
-> expr 5 + 7
-
+```Bash
+expr 5 + 7
 ```
+
+```Output
 12
 ```
 
-> echo $((5 + 7))
-
+```Bash
+echo $((5 + 7))
 ```
+
+```Output
 12
 ```
 
@@ -298,35 +313,48 @@ echo "The average score is $(echo "($model1 + $model2) / 2" | bc)"
 
 #### Option 1 (declare)
 
-> declare -a my_first_array
+```Bash
+declare -a my_first_array
+```
 
 #### Option 2 (brackets and spaces)
 
-> my_array=(1 3 5 2)
+```Bash
+my_array=(1 3 5 2)
+```
 
 
 ##### Return full array
-> echo ${my_array[@]}
-
+```Bash
+echo ${my_array[@]}
 ```
+
+```Output
 1 3 5 2
 ```
 
 ##### Return length of an array
-> echo ${#my_array[@]}
+
+```Bash
+echo ${#my_array[@]}
+```
 
 ##### Accessing array elements
-> echo ${my_array[2]}
-
+```Bash
+echo ${my_array[2]}
 ```
+
+```Output
 5
 ```
 ##### Manipulating array elements
-> my_array[1]=999
 
-> echo ${my_array[@]}
-
+```Bash
+my_array[1]=999
+echo ${my_array[@]}
 ```
+
+```Output
 999 3 5 2
 ```
 ##### Slicing arrays
@@ -395,5 +423,118 @@ echo ${!city_details[@]}
 city_name population
 ```
 
+## IF statements
+
+### Structure of basic IF statements
+
+```Bash
+if [ CONDITION ]; then
+    # some code
+else
+    # some other code
+fi
+```
+
+- spaces between square brackets and conditional elements
+- Semi-colon after close brakcet `];`
+
+### IF statement and strings
+
+- `==` for *equal to*
+- `!=` for *not equal to*
+
+```Bash
+x="Queen"
+if [ $x == "King" ]; then
+    echo "$x is a King!"
+else
+    echo "$x is not a King"
+fi
+```
+```
+Queen is not a King!
+```
+
+### Arithmetic IF statements
+#### 1) Double-paranthesis structure
+```Bash
+x=10
+if (($x > 5)); then
+    echo "$x is more than 5!"
+fi
+```
+```Output
+10 is more than 5!
+```
+#### 2) Square brackets with flags
+##### Arithmetic bash conditional flags
+- `-eq` for *equal to* (`==`)
+- `-ne` for *not equal to* (`!=`)
+- `-lt` for *equal to* (`<`)
+- `-le` for *equal to* (`<=`)
+- `-gt` for *equal to* (`>`)
+- `-ge` for *equal to* (`>=`)
+
+```Bash
+x=10
+if [ $x -gt 5 ]; then
+    echo "$x is more than 5!"
+fi
+```
+```Output
+10 is more than 5!
+```
+
+##### Other bash conditional flags
+- `-e` if the file exists
+- `-s` if the file exists and has a size greater than zero
+- `-r` if the file exists and is readable
+- `-w` if the file exists and is writeable
+
+More bash conditional expressions can be found [here](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html).
 
 
+### AND and OR in Bash
+
+- `&&` for AND
+- `||` for OR
+
+#### Chaining conditionals (1)
+
+```
+x=10
+if [ $x -gt 5 ] && [ $x -lt 11 ]; then
+    echo "$x is more than 5 and less than 11!"
+fi
+```
+
+#### Chaining conditionals (2)
+
+```
+x=10
+if [[ $x -gt 5 && $x -lt 11 ]]; then
+    echo "$x is more than 5 and less than 11!"
+fi
+```
+
+### IF and command-line programs
+#### Option 1
+words.txt
+```txt
+echo "Hello world!"
+```
+```Bash
+if grep -q Hello words.txt; then
+    echo "Hello is inside!"
+fi
+```
+```Output
+Hello is inside!
+```
+#### Option 2
+
+```Bash
+if $(grep -q Hello words.txt); then
+    echo "Hello is inside!"
+fi
+```
