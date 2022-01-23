@@ -901,6 +901,8 @@ Run something multiple times per day or every *X* time increments.
 
 ### Create your first cronjob
 
+Good [tutorial for Mac users](https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx/).
+
 Let's schedule a script called `extract_data.sh` to run every morning at 1:30am:
 
 1. In terminal type `crontab -e` to edit your list of conrjobs
