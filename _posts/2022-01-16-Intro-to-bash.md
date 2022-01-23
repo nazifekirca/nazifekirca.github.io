@@ -490,10 +490,10 @@ fi
 ##### Arithmetic bash conditional flags
 - `-eq` for *equal to* (`==`)
 - `-ne` for *not equal to* (`!=`)
-- `-lt` for *equal to* (`<`)
-- `-le` for *equal to* (`<=`)
-- `-gt` for *equal to* (`>`)
-- `-ge` for *equal to* (`>=`)
+- `-lt` for *less than* (`<`)
+- `-le` for *less than or equal to* (`<=`)
+- `-gt` for *greater than* (`>`)
+- `-ge` for *greater than or equal to* (`>=`)
 
 ```Bash
 x=10
