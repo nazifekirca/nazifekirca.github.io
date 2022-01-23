@@ -74,7 +74,7 @@ carrot
 ```
 ##### 4
 ```Bash
-cat fruits.txt \| sort \| uniq -c \| head -n 3
+cat fruits.txt | sort | uniq -c | head -n 3
 ```
 ```Output
 1 apple
