@@ -39,7 +39,7 @@ Regular expression are a vital skill for Bash scripting. Great [site to test you
 
 - `|` used for piping, for example: `sort | uniq -c`
 
-##### Examples
+#### Examples
 
 fruits.txt
 ```bash
