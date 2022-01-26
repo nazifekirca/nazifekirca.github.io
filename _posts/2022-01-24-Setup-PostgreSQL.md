@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intro to Relational Databases
+title: Setup PostgreSQL
 subtitle: Notes from Datacamp Course
 categories: Databases
 tags: [Relational Databases, Intro]
