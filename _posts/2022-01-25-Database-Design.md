@@ -127,29 +127,53 @@ ELT stands for `Extract Load Transform`
 
 ### Data modeling
 
-#### Conceptual ER diagram
+#### Process of creating a *data model*
+
+1. **Conceptual data model**: describes entities, relationships, and attributes
+    - *Tools*: data structure diagrams, e.g., entity-relational diagrams and UML diagrams
 
 Entities, Relationships, and Attributes
 
 ![ER diagram](/assets/images/post_images/database_design/ER_diagram.png)
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
 
+2. **Logical data model**: defines tables, columns, relationships
+    - *Tools*: database models and schemas, e.g., relational model and star schema
 
-
+Fastes conversion: entities become the tables
 
 ![Locigal schema](/assets/images/post_images/database_design/ER_diagram_as_schema.png)
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
 
-
+Other options of converting the ER diagram into a logical model
 
 ![Design Option 2](/assets/images/post_images/database_design/database_option_2.png)
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
-
 
 ![Design Option 3](/assets/images/post_images/database_design/database_options_3.png)
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
 
 
+3. **Physical data model**: describes physical storage
+    - *Tools*: partitions, CPUs, indexes, backup systems and tablespaces
 
-![ER diagram](/![Dimensional modeling](/assets/images/post_images/database_design/Dimensional_modeling.png)
+
+#### Conceptual ER diagram
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![Dimensional modeling](/assets/images/post_images/database_design/Dimensional_modeling.png)
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
