@@ -132,6 +132,24 @@ ELT stands for `Extract Load Transform`
 Entities, Relationships, and Attributes
 
 ![ER diagram](/assets/images/post_images/database_design/ER_diagram.png)
-
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
 
+
+
+
+![Locigal schema](/assets/images/post_images/database_design/ER_diagram_as_schema.png)
+*[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
+
+
+
+![Design Option 2](/assets/images/post_images/database_design/database_option_2.png)
+*[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
+
+
+![Design Option 3](/assets/images/post_images/database_design/database_options_3.png)
+*[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
+
+
+
+![ER diagram](/![Dimensional modeling](/assets/images/post_images/database_design/Dimensional_modeling.png)
+*[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
