@@ -108,6 +108,7 @@ ETL stands for `Extract Transform Load`
 
 ![ETL scheme](/assets/images/post_images/database_design/ETL_scheme_1.png)*[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
 
+#### ELT
 
 ELT stands for `Extract Load Transform`
 
