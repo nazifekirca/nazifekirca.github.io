@@ -1,12 +1,12 @@
 --- 
 layout: post 
 title: Database Design 
-subtitle: Notes from Datacamp Course 
-categories: Databases 
+subtitle: Notes from Lis Sulmont's Database Design Course
+categories: Databases
 tags: [Database Design, Intro]
 ---
 
-The content is mainly taken from (Database Design) by Lis Sulmont 
+Most of the content (and all images if not specified differently) are taken from [Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont.
 
 ## Understand the requirements
 
@@ -155,27 +155,37 @@ Alternative 2: Add tables to improve data integrity
 ![Design Option 3](/assets/images/post_images/database_design/database_options_3.png)
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
 
-
 3. **Physical data model**: describes physical storage
     - *Tools*: partitions, CPUs, indexes, backup systems and tablespaces
 
+#### Beyond the relational model
+##### Dimensional modeling
 
-#### Conceptual ER diagram
+Adaptation of the relational model for data warehouse design
 
+- Optimized for **OLAP** queries: aggregate data, not updating (OLTP)
+- Built using the star schema
+- Easy to interpret and extend schema
 
+Dimensional models consist of two types of tables:
 
+**Fact tables**
 
+- Holds records of a metric
+- Decided by business use-case
+- changes regularly
+- connects to dimensions via foreign keys
 
+**Dimension tables**
 
-
-
-
-
-
-
-
-
+- Holds descriptions of attributes
+- Does not change as often
 
 
 ![Dimensional modeling](/assets/images/post_images/database_design/Dimensional_modeling.png)
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
+
+**Organizational principle**
+
+- What is being analyzed?
+- How often do entities change?
