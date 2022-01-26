@@ -140,15 +140,17 @@ Entities, Relationships, and Attributes
 2. **Logical data model**: defines tables, columns, relationships
     - *Tools*: database models and schemas, e.g., relational model and star schema
 
-Fastes conversion: entities become the tables
+Fastes conversion: Entities become the tables
 
 ![Locigal schema](/assets/images/post_images/database_design/ER_diagram_as_schema.png)
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
 
-Other options of converting the ER diagram into a logical model
+Alternative 1: All in one table to minimize number of joins
 
 ![Design Option 2](/assets/images/post_images/database_design/database_option_2.png)
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
+
+Alternative 2: Add tables to improve data integrity
 
 ![Design Option 3](/assets/images/post_images/database_design/database_options_3.png)
 *[Database Design](https://campus.datacamp.com/courses/database-design) by Lis Sulmont*
