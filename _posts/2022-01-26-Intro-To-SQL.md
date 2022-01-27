@@ -6,7 +6,7 @@ categories: SQL
 tags: [SQL, Intro]
 ---
 
-Most of the content (and all images if not specified differently) are taken from [Introduction to SQL](https://campus.datacamp.com/courses/introduction-to-sql) by Nick Carchedi's.
+Most of the content (and all images if not specified differently) are taken from [Introduction to SQL](https://campus.datacamp.com/courses/introduction-to-sql) by Nick Carchedi.
 
 ## SQL
 
@@ -16,7 +16,7 @@ Most of the content (and all images if not specified differently) are taken from
 - A table is just a set of rows (aka `records`) and columns (called `fields`), like a spreadsheet, which represents exactly one type of entity.
 - For example, a table might represent employees in a company or purchases made, but not both.
 
-### Selecting columns
+## Selecting columns
 
 Assume we have a table called *people*
 
@@ -85,7 +85,7 @@ SELECT COUNT(DISTINCT birthdate)
 FROM people;
 ```
 
-### Filtering rows
+## Filtering rows
 
 `WHERE` allows you to filter based on both text and numeric values in a table by using the following operators:
 
@@ -308,7 +308,7 @@ FROM people
 ORDER BY birthdate, name;
 ```
 
-### Grouping
+## Grouping
 
 `GROUP BY`: group a result by one or more columns (used with aggregate functions like `COUNT()` or `MAX()`)
 
@@ -321,7 +321,7 @@ GROUP BY release_year
 ORDER BY count;
 ```
 
-### Having
+## Having
 
 > Aggregate functions can't be used in `WHERE` clauses
 
@@ -332,4 +332,4 @@ GROUP BY release_year
 HAVING COUNT(title) > 10;
 ```
 
-To learn about joins, check out [Joining Data in SQL](https://app.datacamp.com/learn/courses/joining-data-in-postgresql).
+[Joining Data in SQL](/_posts/2022-01-27-joining-data-in-sql.md)
