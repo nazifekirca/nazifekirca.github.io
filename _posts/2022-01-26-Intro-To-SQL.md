@@ -332,4 +332,5 @@ GROUP BY release_year
 HAVING COUNT(title) > 10;
 ```
 
-[Joining Data in SQL](/_posts/2022-01-27-joining-data-in-sql.md)
+[Joining Data in SQL](sql/2022/01/27/joining-data-in-sql.html)
+
