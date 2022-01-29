@@ -6,11 +6,11 @@ categories: SQL
 tags: [SQL, Joins]
 ---
 
+Great [resource for joins](https://www.dofactory.com/sql/join)
+
 Most of the content (and all images if not specified differently) are taken from [Joining Data in SQL](https://app.datacamp.com/learn/courses/joining-data-in-postgresql) by Chester Ismay.
 
 ## Inner joins
-
-![Inner Join](https://www.w3schools.com/sql/img_innerjoin.gif)
 
 left_table
 
