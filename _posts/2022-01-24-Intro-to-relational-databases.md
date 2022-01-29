@@ -247,6 +247,119 @@ ADD CONSTRAINT some_name UNIQUE(column_name);
 
 ### Key constraints
 
+#### What is a key?
 
+- Attribute(s) that identify a record uniquely
+- As long as atributes can be removed: **superkey**
+- if no more attributes can be removed: minimal superkey or **key**
+- only one candidate key can be the *chosen* key
+
+#### Primary keys
+##### Characteristics
+- One primary key per database table, chosen from candidate keys
+- Uniquely identifies records, e.g. for referencing in other tables
+- Unique and not-null constraints both apply
+- Primary keys are time-invariant: choose columns wisely!
+
+##### Specifying primary keys
+
+```SQL
+CREATE TABLE products (
+    product_no integer UNIQUE NOT NULL,
+    name text,
+    price numeric
+    );
+
+CREATE TABLE products (
+    product_no integer PRIMARY KEY,
+    name text,
+    price numeric
+    );
+```
+
+```SQL
+CREATE TABLE example (
+    a integer,
+    b integer,
+    c integer,
+    PRIMARY KEY (a, c)
+    );
+```
+
+```SQL
+ALTER TABLE table_name
+ADD CONSTRAINT some_name PRIMARY KEY (column_name)
+```
+
+#### Surrogate keys
+##### Characteristics
+
+- Primary keys should be built from as few columns as possible
+- Primary keys should never change over time
+
+##### Adding a surrogate key 
+###### via serial data type
+
+Let's call the following table **cars**
+
+| make | model | color |
+| --- | --- | --- |
+|Ford| Mustang | blue |
+|Oldsmobile| Cutlass | black |
+|Oldsmobile| Delta | silver |
+|Mercedes| 190_D | champagne |
+|Toyota| Camry | red |
+|Jaguar| XJS | blue |
+
+```SQL
+ALTER TABLE cars
+ADD COLUMN id serial PRIMARY KEY; 
+```
+
+| make | model | color | id |
+| --- | --- | --- | --- |
+|Ford| Mustang | blue | 1 |
+|Oldsmobile| Cutlass | black | 2 |
+|Oldsmobile| Delta | silver | 3 |
+|Mercedes| 190_D | champagne | 4 |
+|Toyota| Camry | red | 5 |
+|Jaguar| XJS | blue | 6 |
+
+```SQL
+INSERT INTO cars
+VALUES ('Volkswagen', 'Blitz', 'black');
+```
+
+| make | model | color | id |
+| --- | --- | --- | --- |
+|Ford| Mustang | blue | 1 |
+|Oldsmobile| Cutlass | black | 2 |
+|Oldsmobile| Delta | silver | 3 |
+|Mercedes| 190_D | champagne | 4 |
+|Toyota| Camry | red | 5 |
+|Jaguar| XJS | blue | 6 |
+|Volkswagen| blitz | black | 7 |
+
+```SQL
+INSERT INTO cars
+VALUES ('Opel', 'Astra', 'green', 1);
+```
+
+```OUTPUT
+duplicate key value violates unique constraint "id_pkey" DETAIL: Key (id)=(1) already exists.
+```
+
+###### via concatenation
+
+```SQL
+ALTER TABLE table_name
+ADD COLUMN column_c varchar(256);
+
+UPDATE table_name
+SET column_c = CONCAT(column_a, column_b); 
+
+ALTER TABLE table_name
+ADD CONSTRAINT pk PRIMARY KEY (column_c);
+```
 
 ### Referential integrity constraints
