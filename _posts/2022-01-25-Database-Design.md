@@ -190,3 +190,30 @@ Dimensional models consist of two types of tables:
 
 - What is being analyzed?
 - How often do entities change?
+
+
+## Star and snowflake schema
+### Dimensional modeling
+#### Star schema
+
+- Fact tables
+    - holds records of a metric
+    - changes regularly
+    - connects to dimensions via foreign keys
+- Dimension tables
+    - holds descriptions of attributes
+    - does not change as often
+
+![star_schema_1](/assets/images/post_images/database_design/star_schema_1.png)
+
+#### Snowflake schema
+
+![snowflake_schema_1](/assets/images/post_images/database_design/snowflake_schema_1.png)
+
+- More than one dimension
+- Dimension tables are ***normalized***
+    - Database design technique
+    - Divides tables into smaller tables and connects them via relationships
+    - Goal: reduce redundancy and increase data integrity
+
+**Identify repeating groups of data and create new tables for them**
