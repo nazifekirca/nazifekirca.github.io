@@ -500,3 +500,23 @@ CREATE TABLE a (
 - `SET NULL`: Set the referencing column to NULL
 - `SET DEFAULT`: Set the referencing column to its default value
 
+#### Modify existing constraints 
+
+```SQL
+-- Identify the correct constraint name
+SELECT constraint_name, table_name, constraint_type
+FROM information_schema.table_constraints
+WHERE constraint_type = 'FOREIGN KEY';
+```
+
+```SQL
+-- Drop the right foreign key constraint
+ALTER TABLE table_name
+DROP CONSTRAINT name_of_foreign_key_constraint;
+```
+
+```SQL
+-- Add a new foreign key constraint which cascades deletion
+ALTER TABLE table_name
+ADD CONSTRAINT name_of_foreign_key_constraint FOREIGN KEY (other_table_id) REFERENCES other_table (id) ON DELETE CASCADE;
+```
