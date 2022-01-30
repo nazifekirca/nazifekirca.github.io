@@ -20,11 +20,12 @@ Most of the content (and all images if not specified differently) is taken from 
 
 ### Inspecting PostgreSQL databases
 
+- `PostgreSQL` is a database management system
 - `information_schema`: 
     - a meta-database that holds information about your current database
     - has multiple tables you can query with the known SELECT * FROM syntax
 
-`information_schema.tables`: information about all tables in your current database
+- `information_schema.tables`: information about all tables in your current database
 
 ```SQL
  SELECT table_schema, table_name 
