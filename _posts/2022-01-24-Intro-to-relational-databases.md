@@ -261,6 +261,14 @@ ADD CONSTRAINT some_name UNIQUE(column_name);
 - Unique and not-null constraints both apply
 - Primary keys are time-invariant: choose columns wisely!
 
+##### Identify Unique Keys
+
+```SQL
+-- Try out different combinations
+SELECT COUNT(DISTINCT(column_a, column_b, column_c)) 
+FROM table_name;
+```
+
 ##### Specifying primary keys
 
 ```SQL
@@ -270,6 +278,8 @@ CREATE TABLE products (
     price numeric
     );
 
+-- same input constraints but primary key explicitly specified
+
 CREATE TABLE products (
     product_no integer PRIMARY KEY,
     name text,
@@ -278,6 +288,7 @@ CREATE TABLE products (
 ```
 
 ```SQL
+-- designate more than one column as the primary key
 CREATE TABLE example (
     a integer,
     b integer,
@@ -294,6 +305,7 @@ ADD CONSTRAINT some_name PRIMARY KEY (column_name)
 #### Surrogate keys
 ##### Characteristics
 
+- Artificial primary key that is not natively part of the table
 - Primary keys should be built from as few columns as possible
 - Primary keys should never change over time
 
@@ -363,3 +375,128 @@ ADD CONSTRAINT pk PRIMARY KEY (column_c);
 ```
 
 ### Referential integrity constraints
+
+#### Foreign keys
+
+- A foreign key (FK) points to the primary key (PK) of another table
+- Domain of FK must be equal to domain of PK
+- FK constraint of referential integrity: Each value of FK must exist in PK of the other table
+- FKs are not actual *keys* (because duplicates and null values are allowed)
+
+#### Specifying foreign keys
+
+```SQL
+
+-- table 1
+CREATE TABLE manufacturers (
+    name varchar(255) PRIMARY KEY);
+
+INSERT INTO manufacturers VALUES ('Ford'), ('VW'), ('GM'); 
+
+-- table 2
+CREATE TABLE cars (
+    model varchar(255) PRIMARY KEY,
+    -- create reference to table 1
+    manufacturer_name varchar(255) REFERENCES manufacturers (name));
+
+-- only cars with valid manufactures can now be entered in the table
+INSERT INTO cars
+VALUES ('Ranger', 'Ford'), ('Beetle', 'VW');
+```
+
+```SQL
+-- Throws an error! (because manufacturer not available in manufacturers table)
+INSERT INTO cars
+VALUES ('Tundra', 'Toyota');
+```
+
+#### Specifying foreign keys to existing tables
+
+```SQL
+ALTER TABLE a
+ADD CONSTRAINT a_fkey FOREIGN KEY (b_id) REFERENCES b (id);
+```
+
+- Table `a` should now refer to table `b`, via `b_id`, which points to `id`. 
+- `a_fkey` is, as usual, a constraint name you can choose on your own.
+- naming convention: a foreign key referencing another primary key with name `id` is named `x_id`, where `x` is the **name of the referencing table** in the singular form.
+
+#### Syntax for joins
+
+While foreign keys and primary keys are not strictly necessary for join queries, they greatly help by telling you what to expect.
+
+```SQL
+SELECT ...
+FROM table_a
+JOIN table_b
+ON ...
+WHERE ...
+```
+
+#### N:M-relationships
+##### General (Many-to-many relationship)
+
+- Create a table
+- Add foreign keys for every connected table
+- Add additional attributes
+
+```SQL
+CREATE TABLE affiliations (
+    professor_id integer REFERENCES professors (id),
+    organization_id varchar(256) REFERENCES organizations (id), 
+    function varchar(256)
+    );
+```
+- Note: no primary key! (because one professor can play multiple functions)
+- Possible PK = {professor_id, organization_id, function}
+
+##### Update columns of a table based on values in another table
+
+```SQL
+UPDATE table_a
+SET column_to_update = table_b.column_to_update_from
+FROM table_b
+WHERE condition1 AND condition2 AND ...;
+```
+
+#### Referential integrity
+
+- ***A record referencing another table must refer to an existing record in that table***
+- Specified between two tables
+- Enforced through foreign keys
+
+#### Referential integrity violations
+
+Referential integrity from table A to table B is violated
+- if a crecord in table B that is referenced from a record in table A is deleted
+- if a crecord in table A referencing a non-existing record from table B is inserted
+
+**Foreign keys prevent violations**
+
+#### Dealing with violations
+
+```SQL
+CREATE TABLE a (
+    id integer PRIMARY KEY,
+    column_a varchar(64),
+    -- ...,
+    b_id integer REFERENCES b (id) ON DELETE NO ACTION
+    );
+```
+
+```SQL
+CREATE TABLE a (
+    id integer PRIMARY KEY,
+    column_a varchar(64),
+    -- ...,
+    b_id integer REFERENCES b (id) ON DELETE CASCADE
+    );
+```
+
+`ON DELETE`
+- `NO ACTION`: Throw an error
+- `CASCADE`: Delete all referencing records
+- `RESTRICT`: Throw an error
+- `SET NULL`: Set the referencing column to NULL
+- `SET DEFAULT`: Set the referencing column to its default value
+
