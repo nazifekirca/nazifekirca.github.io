@@ -66,7 +66,7 @@ If you created your blog by following [this tutorial](https://dev.to/teaberlin/b
 
 The syntax for headings in Markdown is straight forward. `#` in front of some text turns it into a level 1 heading. `##` turns it into a level 2 heading, `###` into a level 3 heading, etc.
 
-#### Backticks
+#### Pair of three backticks
 
 Backticks in Markdown make it possible to format code. The following statement
 
@@ -82,36 +82,108 @@ will be formatted as
 
 
 ```Python
-
 print("hello world!")
-
 ```
 
 You can also use the three backticks without specifying the programming language.
 
 ~~~
 ```
-
 print("hello world!")
-
 ```
 ~~~
 
 In this case, the block between the backticks will still be treated as a code block, but it is agnostic with regard to interpreting the layout.
 
 ```
-
 print("hello world!")
-
 ```
 
+#### Pair of single backticks
+
+While three backticks are demarcate a code block, one backtick can be used to `highlight something` as seen here. This is useful for explanations as you can see in the explanation of the header of a post article above. To highlight a segment, just put it between single backticks like here:
+
+~~~
+`highlighted`
+~~~
+
+`highlighted`
 
 
+#### Bold, italic
 
+```
+This is **bold**, this is *italic*, and this is ***bold and italic***.
+```
 
+This is **bold**, this is *italic*, and this is ***bold and italic***.
 
+#### Text segement
 
+```
+> Use > to highlight a text segment
+```
 
+> Use > to highlight a text segment
 
+#### Links
+
+```
+To insert a link, you put the [text to click on into square brackets](https://tea-berlin.github.io/) and the url into normal brackets. 
+```
+
+To insert a link, you put the [text to click on into square brackets](https://tea-berlin.github.io/) and the url into normal brackets. 
+
+#### Images
+
+Images follow the same syntax as text, but with an explanation mark in front of the square brackets.
+
+```
+![cat image](/assets/images/banners/kitty.jpeg)
+```
+
+![cat image](/assets/images/banners/kitty.jpeg)
+
+You can also link directly to the image via its url
+
+```
+![cat image](https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/wk60201375-image-kp6ccg4m.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&auto=format&ixlib=js-2.2.1&s=da9f1251a3c0008ec61301710cf9ceb2)
+```
+
+![cat image](https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/wk60201375-image-kp6ccg4m.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&auto=format&ixlib=js-2.2.1&s=da9f1251a3c0008ec61301710cf9ceb2)
+
+### Push to your git repository
+
+Once you have made the changes you want to commit to your website, open a terminal. If you are in VSCode, you can do that by clicking on `Terminal` > `New Terminal` at the top of your screen. Now a terminal will open at the bottom of your screen (it might have been opened already). 
+
+Being in your projects root repository, you can now compare the state of the repository on your computer with the state of the repo that is available online, by typing:
+
+```
+git status
+```
+
+If no change shows up, you might have forgotten to save your file/changes.
+
+To add all the modified or new files to the staging area, type:
+
+```
+git add .
+```
+
+The `.`signals that you want to stage all changes. You can also select individual changes by passing concrete file names instead.
+
+Now, commit your changes providing a brief description. 
+
+```
+git commit -m "this is a note to myself and others dealing with the repository; it describes my changes"
+```
+
+Now it is time to push the changes to your remote repository. 
+
+```
+git push origin main
+```
+
+Done! Congratulations!
 
 
