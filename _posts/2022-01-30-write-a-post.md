@@ -13,7 +13,10 @@ If you don't have a jekyll blog website yet, follow this [step-by-step tutorial]
 
 ### Setup your environment
 
-Install Github and VS Code.
+[Install Github and VS Code](https://tea-berlin.github.io/github/2022/01/30/administer-blog-via-editor.html).
+
+
+
 
 
 
