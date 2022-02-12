@@ -144,6 +144,34 @@ Images follow the same syntax as text, but with an explanation mark in front of 
 
 ![cat image](/assets/images/banners/kitty.jpeg)
 
+### Bullet points
+
+And of course, you can use bullet points:
+
+```
+- just use the minus sign
+- you can even distinguish levels through indents
+    - second level, you see?
+```
+
+- just use the minus sign
+- you can even distinguish levels through indents
+    - second level, you see?
+
+### Numbered lists
+
+The same holds for numbered lists:
+
+```
+1. This is the first point
+2. This is the second point
+    1. This is the first point under the second point
+```
+
+1. This is the first point
+2. This is the second point
+    1. This is the first point under the second point
+
 ### Push to Github
 
 Once you have made the changes you want to commit to your website, open a terminal. If you are in VSCode, you can do that by clicking on `Terminal` > `New Terminal` at the top of your screen. Now a terminal will open at the bottom of your screen (it might have been opened already). 
