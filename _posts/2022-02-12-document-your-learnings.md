@@ -147,10 +147,10 @@ Images follow the same syntax as text, but with an explanation mark in front of 
 You can also link directly to the image via its url
 
 ```
-![cat image](https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/wk60201375-image-kp6ccg4m.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&auto=format&ixlib=js-2.2.1&s=da9f1251a3c0008ec61301710cf9ceb2)
+![web image](https://publicdomainvectors.org/photos/nayrhcrel-alice-26.png)
 ```
 
-![cat image](https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/wk60201375-image-kp6ccg4m.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&auto=format&ixlib=js-2.2.1&s=da9f1251a3c0008ec61301710cf9ceb2)
+![web image](https://publicdomainvectors.org/photos/nayrhcrel-alice-26.png)
 
 ### Push to Github
 
