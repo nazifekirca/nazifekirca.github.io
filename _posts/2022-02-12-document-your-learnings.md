@@ -13,7 +13,7 @@ tags: [Markdown, journaling, blog]
 - If you haven't installed Git yet, install it on [Mac OS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x), [Windows](https://www.atlassian.com/git/tutorials/install-git#windows) or [Linux](https://www.atlassian.com/git/tutorials/install-git#linux).
 - Now you can [clone your Github repo](https://code.visualstudio.com/docs/editor/github) and edit it in VS Code. You'll love it!
 
-## Create a post to document your learnings
+## Create a post
 ### The right place
 
 After opening your repository folder in VSCode, you will see the following file structure on the left side of your screen:
