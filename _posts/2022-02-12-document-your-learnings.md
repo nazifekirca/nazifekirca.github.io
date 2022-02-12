@@ -56,17 +56,17 @@ Quick explanation of the attributes:
 
 The actual content of the post goes below the header (note that the header is delineated by `---` at the top and the bottom as can be seen above).
 
-### Useful items
+## Useful items
 
 Here are some practices that work well for note taking.
 
-#### Headings
+### Headings
 
 If you created your blog by following [this tutorial](https://dev.to/teaberlin/build-an-awesome-website-for-free-59ho), you're dealing with a site that automatically creates a table of content for each of your posts based on the structure of the headings within your post. This makes navigating the content really easy for your readers. You should keep that in mind when crafting your post, because eventually this will be your go-to resource once you want to make use of the knowledge documented here.
 
 The syntax for headings in Markdown is straight forward. `#` in front of some text turns it into a level 1 heading. `##` turns it into a level 2 heading, `###` into a level 3 heading, etc.
 
-#### Pair of ```
+### Pair of ```
 
 Backticks in Markdown make it possible to format code. The following statement
 
@@ -99,7 +99,7 @@ In this case, the block between the backticks will still be treated as a code bl
 print("hello world!")
 ```
 
-#### Pair of `
+### Pair of `
 
 While three backticks are demarcate a code block, one backtick can be used to `highlight something` as seen here. This is useful for explanations as you can see in the explanation of the header of a post article above. To highlight a segment, just put it between single backticks like here:
 
@@ -110,7 +110,7 @@ While three backticks are demarcate a code block, one backtick can be used to `h
 `highlighted`
 
 
-#### Bold, italic
+### Bold, italic
 
 ```
 This is **bold**, this is *italic*, and this is ***bold and italic***.
@@ -118,7 +118,7 @@ This is **bold**, this is *italic*, and this is ***bold and italic***.
 
 This is **bold**, this is *italic*, and this is ***bold and italic***.
 
-#### Text segment
+### Text segment
 
 ```
 > Use > to highlight a text segment
@@ -126,7 +126,7 @@ This is **bold**, this is *italic*, and this is ***bold and italic***.
 
 > Use > to highlight a text segment
 
-#### Links
+### Links
 
 ```
 To insert a link, you put the [text to click on into square brackets](https://tea-berlin.github.io/) and the url into normal brackets. 
@@ -134,7 +134,7 @@ To insert a link, you put the [text to click on into square brackets](https://te
 
 To insert a link, you put the [text to click on into square brackets](https://tea-berlin.github.io/) and the url into normal brackets. 
 
-#### Images
+### Images
 
 Images follow the same syntax as text, but with an explanation mark in front of the square brackets.
 
@@ -172,7 +172,7 @@ The same holds for numbered lists:
 2. This is the second point
     1. This is the first point under the second point
 
-### Push to Github
+## Push to Github
 
 Once you have made the changes you want to commit to your website, open a terminal. If you are in VSCode, you can do that by clicking on `Terminal` > `New Terminal` at the top of your screen. Now a terminal will open at the bottom of your screen (it might have been opened already). 
 
