@@ -152,7 +152,7 @@ You can also link directly to the image via its url
 
 ![cat image](https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/wk60201375-image-kp6ccg4m.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&auto=format&ixlib=js-2.2.1&s=da9f1251a3c0008ec61301710cf9ceb2)
 
-### Push to your git repository
+### Push to Github
 
 Once you have made the changes you want to commit to your website, open a terminal. If you are in VSCode, you can do that by clicking on `Terminal` > `New Terminal` at the top of your screen. Now a terminal will open at the bottom of your screen (it might have been opened already). 
 
