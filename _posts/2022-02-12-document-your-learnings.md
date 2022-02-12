@@ -48,7 +48,7 @@ tags: [Markdown, journaling, blog]
 
 Quick explanation of the attributes:
 
-1. `layout`: defines which layout will be applied to this file when being rendered. This needs to be set to `post`
+1. `layout`: defines which layout will be applied to this file when being rendered. This needs to be set to **post**
 2. `title`: displayed on links to your post and on top of your post's page
 3. `subtitle`: displayed underneath your title on the post's page
 4. `categories`: used for the categories page of your site and your posts url; if you want to use multiple categories, you can put the collection into square brackets; order matters here (going from higher to lower categories from left to right)
@@ -62,9 +62,52 @@ Here are some practices that work well for note taking.
 
 #### Headings
 
-If you created your blog by following [this tutorial](https://dev.to/teaberlin/build-an-awesome-website-for-free-59ho), you're dealing with a site that automatically creates a table of content for each of your posts based on the structure of the headings within your post. This makes navigating the content really easy for your readers. You should keep that in mind when crafting your post, because ultimately, this will be your go-to resource once you want to make use of the knowledge that you have documented here.
+If you created your blog by following [this tutorial](https://dev.to/teaberlin/build-an-awesome-website-for-free-59ho), you're dealing with a site that automatically creates a table of content for each of your posts based on the structure of the headings within your post. This makes navigating the content really easy for your readers. You should keep that in mind when crafting your post, because eventually this will be your go-to resource once you want to make use of the knowledge documented here.
 
 The syntax for headings in Markdown is straight forward. `#` in front of some text turns it into a level 1 heading. `##` turns it into a level 2 heading, `###` into a level 3 heading, etc.
+
+#### Backticks
+
+Backticks in Markdown make it possible to format code. The following statement
+
+~~~
+```Python
+
+print("hello world!")
+
+```
+~~~
+
+will be formatted as
+
+
+```Python
+
+print("hello world!")
+
+```
+
+You can also use the three backticks without specifying the programming language.
+
+~~~
+```
+
+print("hello world!")
+
+```
+~~~
+
+In this case, the block between the backticks will still be treated as a code block, but it is agnostic with regard to interpreting the layout.
+
+```
+
+print("hello world!")
+
+```
+
+
+
+
 
 
 
