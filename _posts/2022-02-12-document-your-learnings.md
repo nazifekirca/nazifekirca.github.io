@@ -144,14 +144,6 @@ Images follow the same syntax as text, but with an explanation mark in front of 
 
 ![cat image](/assets/images/banners/kitty.jpeg)
 
-You can also link directly to the image via its url
-
-```
-![web image](https://publicdomainvectors.org/photos/nayrhcrel-alice-26.png)
-```
-
-![web image](https://publicdomainvectors.org/photos/nayrhcrel-alice-26.png)
-
 ### Push to Github
 
 Once you have made the changes you want to commit to your website, open a terminal. If you are in VSCode, you can do that by clicking on `Terminal` > `New Terminal` at the top of your screen. Now a terminal will open at the bottom of your screen (it might have been opened already). 
