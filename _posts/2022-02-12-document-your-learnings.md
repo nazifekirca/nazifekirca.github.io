@@ -66,7 +66,7 @@ If you created your blog by following [this tutorial](https://dev.to/teaberlin/b
 
 The syntax for headings in Markdown is straight forward. `#` in front of some text turns it into a level 1 heading. `##` turns it into a level 2 heading, `###` into a level 3 heading, etc.
 
-#### Pair of three backticks
+#### Pair of ```
 
 Backticks in Markdown make it possible to format code. The following statement
 
@@ -99,7 +99,7 @@ In this case, the block between the backticks will still be treated as a code bl
 print("hello world!")
 ```
 
-#### Pair of single backticks
+#### Pair of `
 
 While three backticks are demarcate a code block, one backtick can be used to `highlight something` as seen here. This is useful for explanations as you can see in the explanation of the header of a post article above. To highlight a segment, just put it between single backticks like here:
 
@@ -118,7 +118,7 @@ This is **bold**, this is *italic*, and this is ***bold and italic***.
 
 This is **bold**, this is *italic*, and this is ***bold and italic***.
 
-#### Text segement
+#### Text segment
 
 ```
 > Use > to highlight a text segment
