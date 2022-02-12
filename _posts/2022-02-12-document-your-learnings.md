@@ -56,7 +56,7 @@ Quick explanation of the attributes:
 
 The actual content of the post goes below the header (note that the header is delineated by `---` at the top and the bottom as can be seen above).
 
-### Good practices
+### Useful items
 
 Here are some practices that work well for note taking.
 
