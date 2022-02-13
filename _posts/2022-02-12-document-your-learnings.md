@@ -11,7 +11,7 @@ tags: [Markdown, journaling, blog]
 - If you haven't create a Jekyll blog page on Github yet, please follow [this tutorial](https://dev.to/teaberlin/build-an-awesome-website-for-free-59ho) to create your own free website.
 - If you don't have a code editor yet, you won't make a mistake by picking VS Code. [Download](https://code.visualstudio.com/download) and install the version that is right for your operating system.
 - If you haven't installed Git yet, install it on [Mac OS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x), [Windows](https://www.atlassian.com/git/tutorials/install-git#windows) or [Linux](https://www.atlassian.com/git/tutorials/install-git#linux).
-- Now you can [clone your Github repo](https://code.visualstudio.com/docs/editor/github) and edit it in VS Code. You'll love it!
+- Now you can [clone your Github repo](https://code.visualstudio.com/docs/editor/github) and edit it in VS Code.
 
 ## Create a post
 
