@@ -14,6 +14,9 @@ tags: [Markdown, journaling, blog]
 - Now you can [clone your Github repo](https://code.visualstudio.com/docs/editor/github) and edit it in VS Code. You'll love it!
 
 ## Create a post
+
+To make sure that your Jekyll blog treats your file as post, you need to follow the three conventions summarized under *the right place*, *the right name*, *the right header*.
+
 ### The right place
 
 After opening your repository folder in VSCode, you will see the following file structure on the left side of your screen:
