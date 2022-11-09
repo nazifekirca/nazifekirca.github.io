@@ -40,14 +40,14 @@ author: Rashid Gaitov
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) {currentYear} {author}"
+copyright: "Made by Rashid (cleft) {currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  We offer high quality courses that help you become a tech professional in record time. We also help you to find a job at a great company. You only pay tuition when you get hired.
+  iOS Developer with 1 year of experience.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-favicon: "" # the favicon for your site
+favicon: "apple.png" # the favicon for your site
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
