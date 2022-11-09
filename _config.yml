@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Tech Expert Academy
-email: berlin@techexpertacademy.com
-author: TEA
+title: iOS Dev Portfolio
+email: rashidgaitov@gmail.com
+author: Rashid Gaitov
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
