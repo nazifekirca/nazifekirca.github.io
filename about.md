@@ -3,20 +3,59 @@ layout: about
 title: About
 ---
 
-## Welcome to Tech Expert Academy
+## Experience
 
-### Why
 
-While companies are desperately looking for tech talent, many people are either unemployed or they work in unfullfilling jobs. We want to be the match maker between these two parties. 
+### iOS Developer in Jusan Bank
 
-### How
+- Implemented messaging functionality with Web-Sockets.
+- Removed RX from project with using own observers, reducing the ”barrier to entry” for new engineers joining the project.
+- Decreased overall project buildtime by getting out of Cocoapods using SwiftPMinstead.
 
-We partner with fast growing companies. By knowing their needs in the near future, we know how to best prepare our students to fill these roles. 
+### iOS Developer at Andersen Lab
 
-### What
+Finished a project Sheasy application for recipe search. The app uses edamam.com Recipe Search API. The app includes a search bar with filter, favourites, detail screen with nutrients and calories for each dish. The app was created based on MVC Architecture. 
 
-At TEA students take a three months intensive training for careers such as Data Engineering, Cloud Solutions etc. They learn at their own pace and have a personal coach checking in with them each week. After the three months period is over, coaches and mentors help to land a job. The classes are free and will be paid back through income share agreements if the student successfully lands a job.
+##### Studied 16 lectures from iOS team lead on the following topics:
+
+- Learnt architectural patterns MVC, MVP, MVVM, VIP & VIPER
+- Multithreaded programming
+- Design patterns Singleton, Observer, Delegate,
+- SOLID, DRY, KISS principles
+- Data Structures
+- HTTP requests
+- Git commands and GitHub
+- Project management framework Agile Scrum
+
+### Java Mentor in Profi.kz
+
+- Mentoring students in groups for OOP programming using Java
+- Control Flow, Loops, Methods, Arrays, ArrayLists, Classes and Objects, OOP, Collections, Map.
+
+## Studies
+
+### Master's Degree in Software Engineering
+Boğaziçi University
+September 2022 - June 2024
+
+### iOS Developer Bootcamp (5 months)
+Swiftbook.ru online Academy
+
+- Learn Swift programming language
+- XCode integrated development environment
+- Algorithms and their performance Big-O
+
+### Software Engineering Bootcamp (6 weeks)
+Jusan Singularity
+- Java language
+- Algorithms and Data structure
+
+### Bachelor's Degree in Civil Engineering
+- Nazarbayev University
+- Have experience in planning building's steel and concrete structures, making strength analysis including seismicity, wind forces, dead and live loads. I can create 3D models of buildings in Revit, AutoCAD; making energy and cost analysis in BeOpt, Plaxis and DesignBuilder.
+
 
 ### Contact
 
-You are interested? Check out our [website](https://techexpertacademy.com). If you like what we are doing, [send us](https://www.techexpertacademy.com/#contact-form-main) a link to your GitHub Page and we’ll get back to you soon. Follow us on [LinkedIn](https://de.linkedin.com/company/tech-expert-academy?trk=public_profile_topcard-current-company).
+Phone: +90(543)-133-58-01
+Email: rashidgaitov@gmail.com
