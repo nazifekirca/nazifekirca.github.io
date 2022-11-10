@@ -6,7 +6,7 @@ categories: Website
 tags: [Github, website, tutorial, beginners]
 ---
 
-## Welcome to this tutorial!
+## Tutorial by Tech Expert Academy!
 
 <a href="https://youtu.be/TRIys0HLJuU" title="Video Tutorial"><img src="/assets/images/post_images/website_tutorial/youtube_cover_image.jpeg" alt="Link to video version of tutorial" /></a>
 
