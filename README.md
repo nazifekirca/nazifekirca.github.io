@@ -1,4 +1,4 @@
-## Purpose
+## Portfolio
 
 Website by GaitovRK based on the template from [jeffreytse](https://github.com/jeffreytse/jekyll-theme-yat)
 
